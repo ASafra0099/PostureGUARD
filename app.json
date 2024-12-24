@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "app",
+    "slug": "app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./screens/assets/images/logoBox.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./screens/assets/images/splashScreen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+        }
+      ]
+    ],
+    "permissions": ["CAMERA"],
+    
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./screens/assets/images/logoBox.png",
+        "backgroundColor": "#ffffff"
+        
+      }
+    },
+    "web": {
+      "favicon": "./screens/assets/images/favicon.png"
+    }
+  }
+}
